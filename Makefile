@@ -36,12 +36,12 @@ test:
 
 # Install support:
 install:
-	install -C -d -m 0755 $(INSTALL_LIB)/
-	install -C -m 0755 $(LIB) $(INSTALL_LIB)/
-	install -C -d -m 0755 $(INSTALL_EXT)/
-	install -C -m 0755 $(EXTS) $(INSTALL_EXT)/
-	install -C -d -m 0755 $(INSTALL_MAN1)/
-	install -C -m 0644 $(MAN1)/$(NAME).1 $(INSTALL_MAN1)/
+	install -C -d -m 0755 "$(INSTALL_LIB)"/
+	install -C -m 0755 $(LIB) "$(INSTALL_LIB)"/
+	install -C -d -m 0755 "$(INSTALL_EXT)"/
+	install -C -m 0755 $(EXTS) "$(INSTALL_EXT)"/
+	install -C -d -m 0755 "$(INSTALL_MAN1)"/
+	install -C -m 0644 $(MAN1)/$(NAME).1 "$(INSTALL_MAN1)"/
 
 # Uninstall support:
 uninstall:
